@@ -14,5 +14,9 @@ PS:
 
 -->重启SSH服务：尝试重启SSH服务以应用任何更改，使用service ssh restart或者/etc/init.d/ssh restart。
 
-
+container退出重进ip更改后，修改以下文件：
+1. /etc/hosts
+2. /home/user/code/目录下新建 hostfile 文件，写入：
+manager slots=1
+worker slots=1
 
